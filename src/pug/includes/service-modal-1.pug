@@ -20,9 +20,12 @@
                             img.img-fluid.rounded.mb-5(src='assets/img/service/cabin.png', alt='...')
                             // Service Modal - Text
                             p.mb-4
-                                | 以ChatGPT技術為基底，打造你日常業務內的專屬客服機器人，幫你初步解決客戶問題，節省時間和人力成本
-                                | ul.
-                                    . 有別於傳統聊天機器人的模板式呆板QA，他能#[解析客戶的問題，並提供結構式的彈性答覆]
+                                p 以ChatGPT技術為基底，打造你日常業務內的專屬客服機器人，幫你初步解決客戶問題，節省時間和人力成本
+                                    ul
+                                        li 有別於傳統聊天機器人的模板式呆板QA，他能<strong>解析客戶的問題，並提供結構式的彈性答覆</strong>
+                                        //- li<strong>串接各種平台的聊天系統</strong>，LINE官方帳號、Messenger、自用網頁等等都OK!</li>
+                                        li<strong>低成本規模化</strong>，不必砸重金訓練資料，只要提供常見的常見問答及業務內容即可
+                                        li<strong>判別問題種類</strong>，如果問題機器人無法回覆，也會導回至真人客服，不會胡說八道
                             button.btn.btn-primary(data-bs-dismiss='modal')
                                 i.fas.fa-xmark.fa-fw
                                 | Close Window
