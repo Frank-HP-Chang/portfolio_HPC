@@ -57,11 +57,36 @@ html(lang='zh-TW')
                 // Masthead Subheading
                 p.masthead-subheading.font-weight-light.mb-0 Affordable - Trustworthy - Intuitive
 
+        // About Section
+        section#about.page-section.bg-primary.text-white.mb-0
+            .container
+                // About Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-white About
+                // Icon Divider
+                .divider-custom.divider-light
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                // About Section Content
+                .row
+                    .col-lg-4.ms-auto
+                        p.lead
+                            | Implementation Go是一間科技顧問新創。針對中小型的公司、工作室、團隊......，提供模板和客製化的數位轉型服務，提供網站建置、聊天機器人、預約系統等服務，同時也提供數位行銷等策略規劃，讓您的業務觸及到更多客戶。
+                    .col-lg-4.me-auto
+                        p.lead
+                            | 起源：經過多次的訪談，我們發現許多的中小型的機構都因認為數位轉型的成本過高而不願意投入，但近年來隨著雲端和AI技術的進步，共享使得系統建置的費用指數型下降，我們希望用最親民的價位，提供客製化的方案整合方案，協助您將您的日常數位化。
+                // About Section Button
+                .text-center.mt-4
+                    a.btn.btn-xl.btn-outline-light(href='https://startbootstrap.com/theme/freelancer/')
+                        i.fas.fa-download.me-2
+                        | Free Download!
+
         // Service Section
         section#service.page-section.service
             .container
                 // Service Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Service
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 我們能幫你 We can help you
                 // Icon Divider
                 .divider-custom
                     .divider-custom-line
@@ -92,35 +117,10 @@ html(lang='zh-TW')
                                     p Reservation#[br]預約系統
                             img.img-fluid(src='assets/img/service/circus.png', alt='...')
                    
-        // About Section
-        section#about.page-section.bg-primary.text-white.mb-0
-            .container
-                // About Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-white About
-                // Icon Divider
-                .divider-custom.divider-light
-                    .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-star
-                    .divider-custom-line
-                // About Section Content
-                .row
-                    .col-lg-4.ms-auto
-                        p.lead
-                            | Implementation Go是一間科技顧問新創。針對中小型的公司、工作室、團隊......，提供模板和客製化的數位轉型服務，提供網站建置、聊天機器人、預約系統等服務，同時也提供數位行銷等策略規劃，讓您的業務觸及到更多客戶。
-                    .col-lg-4.me-auto
-                        p.lead
-                            | 起源：經過多次的訪談，我們發現許多的中小型的機構都因認為數位轉型的成本過高而不願意投入，但近年來隨著雲端和AI技術的進步，共享使得系統建置的費用指數型下降，我們希望用最親民的價位，提供客製化的方案整合方案，協助您將您的日常數位化。
-                // About Section Button
-                .text-center.mt-4
-                    a.btn.btn-xl.btn-outline-light(href='https://startbootstrap.com/theme/freelancer/')
-                        i.fas.fa-download.me-2
-                        | Free Download!
-
-        // Contact Section
+        // BOT Section
         section#contact.page-section
             .container
-                // Contact Section Heading
+                // BOT Section Heading
                 h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Me
                 // Icon Divider
                 .divider-custom
@@ -128,90 +128,8 @@ html(lang='zh-TW')
                     .divider-custom-icon
                         i.fas.fa-star
                     .divider-custom-line
-                // Contact Section Form
-                .row.justify-content-center
-                    .col-lg-8.col-xl-7
-
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
-                        // * * * * * * * * * * * * * * *
-
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
-
-                        form#contactForm(data-sb-form-api-token='API_TOKEN')
-
-                            // Name input
-                            .form-floating.mb-3
-                                input#name.form-control(
-                                    type='text',
-                                    placeholder='Enter your name...',
-                                    data-sb-validations='required'
-                                )
-                                label(for='name') Full name
-                                .invalid-feedback(data-sb-feedback='name:required')
-                                    | A name is required.
-
-                            // Email address input
-                            .form-floating.mb-3
-                                input#email.form-control(
-                                    type='email',
-                                    placeholder='name@example.com',
-                                    data-sb-validations='required,email'
-                                )
-                                label(for='email') Email address
-                                .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
-                                .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
-
-                            // Phone number input
-                            .form-floating.mb-3
-                                input#phone.form-control(
-                                    type='tel',
-                                    placeholder='(123) 456-7890',
-                                    data-sb-validations='required'
-                                )
-                                label(for='phone') Phone number
-                                .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
-
-                            // Message input
-                            .form-floating.mb-3
-                                textarea#message.form-control(
-                                    type='text',
-                                    placeholder='Enter your message here...',
-                                    style='height: 10rem;',
-                                    data-sb-validations='required'
-                                )
-                                label(for='message') Message
-                                .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
-
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
-
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
-
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3 Error sending message!
-
-                            // Submit Button
-                            button#submitButton.btn.btn-primary.btn-xl.disabled(type='submit') Send
+                // BOT Section Form
+                iframe(src="https://implementationgobot.streamlit.app/?utm_medium=oembed#simple-chat", frameborder="0") 
 
         // Footer
         footer.footer.text-center
